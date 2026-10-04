@@ -1,0 +1,26 @@
+{
+  "slug": "waitwise",
+  "name": "Waitwise",
+  "venture_number": 1,
+  "state": "BUILDING",
+  "opportunity_ids": [
+    "opp_8cd9ce4484f5480280df03d288d8b483",
+    "opp_f15ba7a98ce84f808630ce9bacb41b2c",
+    "opp_b9691cda03144ee4bf6a3d2375c0c2e1"
+  ],
+  "cluster_ids": [
+    "cl_9478f6268ec84845b7273fbde0d5314b",
+    "cl_1db1e44431404af384e64c0275f74036"
+  ],
+  "customer": "Travelers and outdoor bookers who miss scarce appointment/release windows; secondary: builders researching appointment-access products",
+  "problem": "Scarce appointment slots (passport, camping, visa) create repeated failed attempts; paid alert products and brittle scrapers exist, but trustworthy free prep + signal visibility is thin.",
+  "business_model": "Free public guides + signal ledger now; later optional policy-compliant alerts (commerce OFF until OWNER Class 2 envelope + payment account).",
+  "brand": {
+    "name": "Waitwise",
+    "positioning": "Scarce appointment access \u2014 official paths, honest signals, no scrape.",
+    "promise": "Know the wait. Prep the path."
+  },
+  "bootstrap_usd": 0,
+  "publish_channel": "github_pages",
+  "created_at": "2026-10-04T23:41Z"
+}

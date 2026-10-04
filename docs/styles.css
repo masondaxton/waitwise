@@ -1,0 +1,84 @@
+
+:root {
+  --ink: #14211c;
+  --muted: #4d6359;
+  --paper: #f3f6f2;
+  --panel: #ffffff;
+  --accent: #0f6a56;
+  --accent-2: #c45c26;
+  --line: #d5e0d8;
+  --shadow: 0 18px 50px rgba(20, 33, 28, 0.08);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #dceee6 0%, transparent 55%),
+    radial-gradient(900px 420px at 100% 0%, #f7e4d4 0%, transparent 50%),
+    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7efe9 100%);
+}
+.hero, main, footer { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+.hero { padding: 4.5rem 0 2.5rem; }
+.brand {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin: 0 0 1rem;
+  font-weight: 700;
+}
+h1 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 0.95;
+  margin: 0 0 1rem;
+  max-width: 12ch;
+}
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 46rem; }
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
+.cta a {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 650;
+}
+.primary { background: var(--accent); color: white; }
+.secondary { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+section { padding: 1.5rem 0 2rem; }
+h2 { font-size: 1.7rem; margin: 0 0 0.75rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.1rem 1.15rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+.card h3 { margin: 0.2rem 0 0.55rem; font-size: 1.15rem; }
+.card a { color: var(--accent); }
+.meta, .obs, .pill {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.pill {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: #e4f2eb;
+  color: var(--accent);
+}
+ol { margin: 0; padding-left: 1.15rem; color: var(--muted); }
+li { margin: 0.35rem 0; }
+footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 640px) {
+  h1 { max-width: none; }
+}
