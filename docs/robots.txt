@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://masondaxton.github.io/waitwise/sitemap.xml
