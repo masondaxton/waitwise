@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 Sitemap: https://masondaxton.github.io/waitwise/sitemap.xml
 # edition 2026-10-05-v1.1
+# rebuild-legacy
