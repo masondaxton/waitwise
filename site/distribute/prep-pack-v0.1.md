@@ -1,4 +1,4 @@
-﻿# Waitwise prep pack (v0.1)
+# Waitwise prep pack (v0.1)
 
 Free official-link guides. No scraping. Commerce OFF.
 
