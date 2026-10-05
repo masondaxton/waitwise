@@ -1,84 +1,123 @@
-
 :root {
-  --ink: #14211c;
-  --muted: #4d6359;
-  --paper: #f3f6f2;
+  --ink: #0f1720;
+  --muted: #5a6570;
+  --paper: #f7f8fa;
   --panel: #ffffff;
-  --accent: #0f6a56;
-  --accent-2: #c45c26;
-  --line: #d5e0d8;
-  --shadow: 0 18px 50px rgba(20, 33, 28, 0.08);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --accent: #0b6e4f;
+  --accent-ink: #ffffff;
+  --line: #d9dee5;
+  --warn: #8a4b12;
+  font-family: "Source Serif 4", "Libre Baskerville", "Georgia", serif;
 }
 * { box-sizing: border-box; }
 body {
   margin: 0;
   color: var(--ink);
   background:
-    radial-gradient(1200px 500px at 10% -10%, #dceee6 0%, transparent 55%),
-    radial-gradient(900px 420px at 100% 0%, #f7e4d4 0%, transparent 50%),
-    linear-gradient(180deg, #eef4ef 0%, var(--paper) 40%, #e7efe9 100%);
+    linear-gradient(180deg, #e8eef2 0%, var(--paper) 28%, #f3f5f7 100%);
 }
-.hero, main, footer { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
-.hero { padding: 4.5rem 0 2.5rem; }
+.hero, main, footer {
+  width: min(720px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+.hero { padding: 3.75rem 0 1.75rem; }
 .brand {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-  letter-spacing: 0.18em;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--accent);
   margin: 0 0 1rem;
   font-weight: 700;
 }
 h1 {
-  font-size: clamp(2.4rem, 5vw, 4.2rem);
-  line-height: 0.95;
+  font-size: clamp(2.1rem, 5vw, 3.35rem);
+  line-height: 1.05;
   margin: 0 0 1rem;
-  max-width: 12ch;
+  letter-spacing: -0.02em;
 }
-.lede { font-size: 1.15rem; color: var(--muted); max-width: 46rem; }
-.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.75rem; }
-.cta a {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+.lede {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+.hero-note {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 1.25rem 0 0;
+}
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.6rem;
+}
+.cta a, a.text-link {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   text-decoration: none;
-  padding: 0.85rem 1.2rem;
-  border-radius: 999px;
   font-weight: 650;
 }
-.primary { background: var(--accent); color: white; }
-.secondary { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
-section { padding: 1.5rem 0 2rem; }
-h2 { font-size: 1.7rem; margin: 0 0 0.75rem; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+.cta a {
+  padding: 0.8rem 1.15rem;
+  border-radius: 8px;
 }
-.card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 1.1rem 1.15rem 1.2rem;
-  box-shadow: var(--shadow);
+.primary { background: var(--accent); color: var(--accent-ink); }
+.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
 }
-.card h3 { margin: 0.2rem 0 0.55rem; font-size: 1.15rem; }
-.card a { color: var(--accent); }
-.meta, .obs, .pill {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-  font-size: 0.78rem;
+.text-link { color: var(--accent); }
+section { padding: 1.35rem 0 0.4rem; }
+h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.65rem;
+}
+section p, .steps, .plain {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   color: var(--muted);
+  line-height: 1.55;
+}
+.steps, .plain {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.steps li, .plain li { margin: 0.45rem 0; }
+.plain { list-style: disc; }
+a { color: var(--accent); }
+.sources {
+  margin-top: 1.5rem;
+  padding: 1.1rem 1.15rem 1.25rem;
+  border-top: 1px solid var(--line);
+  background: var(--panel);
 }
 .pill {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
   display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.15rem 0.55rem;
-  border-radius: 999px;
-  background: #e4f2eb;
+  margin-left: 0.35rem;
+  padding: 0.12rem 0.5rem;
+  border-radius: 4px;
+  background: #e7f3ee;
   color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 650;
+  vertical-align: middle;
 }
-ol { margin: 0; padding-left: 1.15rem; color: var(--muted); }
-li { margin: 0.35rem 0; }
-footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; }
+.obs {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+footer {
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+}
+footer .obs { margin-top: 0.75rem; }
 @media (max-width: 640px) {
-  h1 { max-width: none; }
+  .hero { padding-top: 2.75rem; }
 }

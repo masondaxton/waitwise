@@ -1,146 +1,51 @@
 {
   "venture": "waitwise",
-  "edition": "2026-10-04-v1",
-  "generated_at": "2026-10-04T23:41Z",
-  "method": "Curated from Mason Ventures Oracle opportunity_inbox PROMOTED rows with public http(s) refs. Not scraped government appointment systems. Confidence is company-internal ranking, not market proof.",
+  "edition": "2026-10-05-v1.1",
+  "generated_at": "2026-10-05T20:40Z",
+  "method": "Curated appointment-relevant public sources only after productization reevaluation. Not a live scrape of government schedulers. Not market proof.",
+  "product": "passport_appointment_prep_primary",
   "commerce": "OFF",
   "spend_usd": 0,
   "signals": [
     {
-      "id": "sig_c792a542fcf14af18e80ac892746618a",
-      "title": "https://campnab",
+      "id": "src_campnab_reviews",
+      "title": "Campnab customer reviews (paid campsite alerts)",
       "url": "https://campnab.com/reviews",
-      "source_type": "CUSTOMER_PAIN",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.475,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:03:03+00:00",
-      "themes": [
-        "appointment"
-      ],
-      "preview": "Source: https://campnab.com/reviews (no dates on the individual notes; these are comments Campnab publishes). JoJo N. writes that after missing most of a Yosemite release they signed up for the $20 option and later booke",
-      "provenance": "oracle_opportunity_inbox"
+      "themes": ["appointment", "camping", "wtp_claim"],
+      "note": "Published reviews describe paying for sold-out campsite alerts. CLAIM, not our customer.",
+      "provenance": "public_competitor"
     },
     {
-      "id": "sig_3b02ba65466448ebb62ff66d4da047fa",
-      "title": "https://github",
+      "id": "src_passportalerts",
+      "title": "PassportAlerts — USPS passport appointment alert waitlist",
+      "url": "https://passportalerts.com/",
+      "themes": ["appointment", "passport"],
+      "note": "Competitor positioning: stop refreshing RCAS; SMS/email alerts launching. Independent of Waitwise.",
+      "provenance": "public_competitor"
+    },
+    {
+      "id": "src_usps_finder_oss",
+      "title": "USPS Passport Appointment Finder (open source)",
       "url": "https://github.com/JackieQi/USPS-Passport-Appointment-Finder",
-      "source_type": "GITHUB_OSS",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.475,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:03:03+00:00",
-      "themes": [
-        "appointment"
-      ],
-      "preview": "Source: https://github.com/JackieQi/USPS-Passport-Appointment-Finder and the README at https://raw.githubusercontent.com/JackieQi/USPS-Passport-Appointment-Finder/main/README.md (no date on the README). The backstory say",
-      "provenance": "oracle_opportunity_inbox"
+      "themes": ["appointment", "passport"],
+      "note": "README pain: official scheduler hard to use when slots scarce.",
+      "provenance": "public_oss"
     },
     {
-      "id": "sig_74e26aaca4604a19bc2b952018e28ded",
-      "title": "https://nicolasbouliane",
+      "id": "src_bouliane_finder",
+      "title": "Nicolas Bouliane — appointment finder project writeup",
       "url": "https://nicolasbouliane.com/projects/appointment-finder",
-      "source_type": "CUSTOMER_PAIN",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.475,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:03:03+00:00",
-      "themes": [
-        "appointment",
-        "buying_intent"
-      ],
-      "preview": "Source: https://nicolasbouliane.com/projects/appointment-finder (says built in 2022; no publication date). Nicolas Bouliane writes that appointments are usually missing or 4 to 8 weeks away, that he launched a finder in ",
-      "provenance": "oracle_opportunity_inbox"
+      "themes": ["appointment"],
+      "note": "Describes long waits / missing appointments as motivation to build tooling.",
+      "provenance": "public_writeup"
     },
     {
-      "id": "sig_1aaa9bbcc5164a50b86d911d8f50ec43",
-      "title": "https://github",
+      "id": "src_visa_termin",
+      "title": "visa-termin-alert (open source)",
       "url": "https://github.com/noworneverev/visa-termin-alert",
-      "source_type": "GITHUB_OSS",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.475,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:03:03+00:00",
-      "themes": [
-        "appointment"
-      ],
-      "preview": "Source: https://github.com/noworneverev/visa-termin-alert and https://raw.githubusercontent.com/noworneverev/visa-termin-alert/main/README.md (no date). Yan-Ying Liao writes that an earlier chatbot had shut down, that th",
-      "provenance": "oracle_opportunity_inbox"
-    },
-    {
-      "id": "sig_c1c9b40f893247d9945a0f89dc05a0e0",
-      "title": "https://www",
-      "url": "https://www.capterra.in/software/1013191/booknetic",
-      "source_type": "MONETIZATION",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.475,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:03:03+00:00",
-      "themes": [
-        "appointment"
-      ],
-      "preview": "Source: https://www.capterra.in/software/1013191/booknetic. The product block shows a starting price of $79 one-time. A 2026-05-26 review by Ben in Germany says a live spa site took WooCommerce payments for the same room",
-      "provenance": "oracle_opportunity_inbox"
-    },
-    {
-      "id": "sig_440aa6e346794f4083e46d611912bd00",
-      "title": "CopilotKit/openmuse: A personal agent with a browser, terminal, files, and work that keeps going built with\u2026",
-      "url": "https://github.com/CopilotKit/openmuse",
-      "source_type": "GITHUB_OSS",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.417,
-      "novelty": 0.5,
-      "observed_at": "2026-10-04T23:20:56+00:00",
-      "themes": [
-        "appointment"
-      ],
-      "preview": "CopilotKit/openmuse: A personal agent with a browser, terminal, files, and work that keeps going built with CopilotKit and AG-UI.",
-      "provenance": "oracle_opportunity_inbox"
-    },
-    {
-      "id": "sig_30ea49996a224d91a35d955ba78f1019",
-      "title": "PhoenixIam, https://www.indiehackers.com/post/i-launched-a-paid-product-with-no-free-trial-4-on-product-hun\u2026",
-      "url": "https://www.indiehackers.com/post/i-launched-a-paid-product-with-no-free-trial-4-on-product-hunt-and-377-so-far-FI1mo6Sy45m5Qy16yg3d",
-      "source_type": "AI_RELEASE",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.475,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:04:02+00:00",
-      "themes": [
-        "buying_intent"
-      ],
-      "preview": "PhoenixIam, https://www.indiehackers.com/post/i-launched-a-paid-product-with-no-free-trial-4-on-product-hunt-and-377-so-far-FI1mo6Sy45m5Qy16yg3d. The post says a $49 extension, 12 paying customers, and $377 so far. 12 ti",
-      "provenance": "oracle_opportunity_inbox"
-    },
-    {
-      "id": "sig_aa871cd87a57422fb2bcc9f982980501",
-      "title": "Kirill Strelnikov, https://dev.to/kirill_strelnikov_d8546b8/how-my-telegram-bot-got-500-paying-users-in-3-m\u2026",
-      "url": "https://dev.to/kirill_strelnikov_d8546b8/how-my-telegram-bot-got-500-paying-users-in-3-months-python-aiogram-3ok3",
-      "source_type": "AI_RELEASE",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.438,
-      "novelty": 0.45,
-      "observed_at": "2026-10-04T23:04:02+00:00",
-      "themes": [
-        "buying_intent"
-      ],
-      "preview": "Kirill Strelnikov, https://dev.to/kirill_strelnikov_d8546b8/how-my-telegram-bot-got-500-paying-users-in-3-months-python-aiogram-3ok3. The 6,200 dollar month-3 figure is a client bot he built, billed through paid OpenAI, ",
-      "provenance": "oracle_opportunity_inbox"
-    },
-    {
-      "id": "sig_53804dc33f2046268b79428b1e5ad18b",
-      "title": "jarrodwatts/jev-trader: One AI trade decision every Monad block. Jev on Kuru MON-USDC.",
-      "url": "https://github.com/jarrodwatts/jev-trader",
-      "source_type": "GITHUB_OSS",
-      "perspective": "DEMAND_FIRST",
-      "confidence": 0.417,
-      "novelty": 0.5,
-      "observed_at": "2026-10-04T23:20:55+00:00",
-      "themes": [
-        "buying_intent"
-      ],
-      "preview": "jarrodwatts/jev-trader: One AI trade decision every Monad block. Jev on Kuru MON-USDC.",
-      "provenance": "oracle_opportunity_inbox"
+      "themes": ["appointment", "visa"],
+      "note": "Secondary theme only — embassy slot bots are brittle / often shut down.",
+      "provenance": "public_oss"
     }
   ]
 }

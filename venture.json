@@ -3,6 +3,10 @@
   "name": "Waitwise",
   "venture_number": 1,
   "state": "LIVE",
+  "edition": "2026-10-05-v1.1",
+  "prior_edition": "2026-10-04-v1",
+  "decision": "REPOSITION_REDUCE",
+  "reevaluation": "docs/WAITWISE_PRODUCT_REEVALUATION.md",
   "opportunity_ids": [
     "opp_8cd9ce4484f5480280df03d288d8b483",
     "opp_f15ba7a98ce84f808630ce9bacb41b2c",
@@ -14,27 +18,25 @@
     "cl_fb5e776f10a7450dbdbddfba4f2ed998",
     "cl_4d42ef40c60048b597a5f1d2222fbce7"
   ],
-  "customer": "Travelers and outdoor bookers who miss scarce appointment/release windows; secondary: builders researching appointment-access products",
-  "problem": "Scarce appointment slots (passport, camping, visa) create repeated failed attempts; paid alert products and brittle scrapers exist, but trustworthy free prep + signal visibility is thin.",
-  "business_model": "Free public guides + signal ledger now; later optional policy-compliant alerts (commerce OFF until OWNER Class 2 envelope + payment account).",
+  "customer": "US residents who need an in-person USPS passport appointment and keep seeing no RCAS availability; secondary: campers missing Recreation.gov release windows",
+  "problem": "Scarce passport appointment slots create refresh loops and trip risk; unofficial scrapers are brittle/ToS-risky; free official-path prep is thin compared with alert products.",
+  "business_model": "Free passport-primary prep pack + waitlist now; camping secondary; later optional policy-compliant alerts only inside OWNER Class 2 commerce envelope.",
   "brand": {
     "name": "Waitwise",
-    "positioning": "Scarce appointment access \u2014 official paths, honest signals, no scrape.",
-    "promise": "Know the wait. Prep the path."
+    "positioning": "Scarce US passport appointment prep — official paths, no scrape. Alerts not offered while commerce is off.",
+    "promise": "Prep the official path. Know what to try when RCAS is empty.",
+    "name_collision_note": "Other WaitWise products mean queue/live wait times; disclose on site."
   },
   "bootstrap_usd": 0,
   "publish_channel": "github_pages",
   "created_at": "2026-10-04T23:41Z",
+  "repositioned_at": "2026-10-05T20:40Z",
   "live_url": "https://masondaxton.github.io/waitwise/",
   "repo_url": "https://github.com/masondaxton/waitwise",
   "published_at": "2026-10-04T23:44:06+00:00",
   "audit": {
-    "verdict": "VERIFIED",
-    "signal_count": 9
-  },
-  "organic": {
-    "gist": "https://gist.github.com/masondaxton/6c2368ad2784bc05b874282d425d25a3",
-    "status": "PUBLISHED_VALUE_FIRST_ASSETS"
+    "verdict": "PRODUCTIZATION_REVISED",
+    "signal_count": 5
   },
   "commerce": "OFF",
   "spend_usd": 0
